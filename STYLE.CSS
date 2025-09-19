@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: 'Poppins',sans-serif;
+  background-color: #f6ff00;
+  color: #000;
+}
+
+.header-head {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+
+.h2-50 {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 1.35rem;
+}
+
+.box-diamond {
+  position: relative;
+  padding-top: 1rem;
+  height: 28rem;
+  width: auto;
+  border: 1px solid #000;
+  margin: 0 5rem;
+  background-color: #000; 
+
+}
+.box-1 {
+  display:flex;
+}
+.box-2,.box-3 {
+  display: flex;
+  margin-top: 1rem;
+}
+
+
+
+.box-50dm {
+  /* position: relative; atau absolute */
+  /* left: -4rem; geser ke kiri 10px */
+  width: auto;
+  background-image:url(gambar/Dm.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: blue;
+  max-width: 90%;
+  border: 3px lightskyblue solid;
+  width: 50%;
+  height: 4rem;
+  margin-left: 1rem;
+  box-sizing: border-box;
+}
+
+.box-50dm:hover,.box-125dm:hover,.box-275dm:hover,.box-562dm:hover,.box-1024dm:hover {
+  position: relative;
+  z-index: 100;
+  top: -1.3rem;
+  border: 3px rgb(255, 255, 255) solid;
+  animation: animasi50dm 300ms linear;
+
+}
+.box-125dm {
+  /* position: relative; atau absolute */
+  /* left: -4rem; geser ke kiri 10px */
+  width: auto;
+   background-image:url(gambar/Dm.webp);
+     background-repeat: no-repeat;
+  background-size: cover;
+  background-color: blue;
+  max-width: 100%;
+  width: 50%;
+  margin-right: 1rem;
+  border: 3px lightskyblue solid;
+  height: 4rem;
+  margin-left: 1rem;
+  box-sizing: border-box;
+
+}
+.box-275dm {
+  /* position: relative; atau absolute */
+  /* left: -4rem; geser ke kiri 10px */
+  width: auto;
+  background-color: blue;
+  max-width: 90%;
+  width: 50%;
+   background-image:url(gambar/Dm.webp);
+     background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px lightskyblue solid;
+  height: 4rem;
+  margin-left: 1rem;
+  box-sizing: border-box;
+
+}
+.box-562dm {
+  /* position: relative; atau absolute */
+  /* left: -4rem; geser ke kiri 10px */
+  width: auto;
+  background-color: blue;
+  max-width: 100%;
+  width: 50%;
+   background-image:url(gambar/Dm.webp);
+     background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 1rem;
+  height: 4rem;
+  border: 3px lightskyblue solid;
+  margin-left: 1rem;
+  box-sizing: border-box;
+
+}
+.box-1024dm {
+  /* position: relative; atau absolute */
+  /* left: -4rem; geser ke kiri 10px */
+  width: auto;
+  
+  background-color: blue;
+  max-width: 100%;
+  border: 3px lightskyblue solid;
+  width: 50%;
+   background-image:url(gambar/Dm.webp);
+     background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 1rem;
+  height: 4rem;
+  margin-left: 25%;
+  box-sizing: border-box;
+
+}
+.hasil-kotak {
+  border: #fff solid 2px;
+  color: #00ddff;
+  background-color: rgb(0, 0, 62);
+  text-align: center;
+  margin-top: 3rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.next-button {
+  border: #fff solid 2px;
+  color: #fff;
+  height: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+.next-btn {
+  height: 100%;
+  width: 80%;
+  font-family: 'Poppins',sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 10%;
+  margin-top: 1rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(73, 73, 255);
+  cursor: pointer;
+}
+.next-btn:hover {
+  background-color: aqua;
+}
+
+
+
+
+
+
+
+.form-container {
+    position: absolute;
+    top: 0;
+    border: 3px solid rgb(88, 118, 255);
+    width: 70%;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.7);
+   display: none;
+    height: 33.5rem;
+    left: 15%;
+    top: 1rem;
+    background-color: rgb(0, 145, 255);
+    margin-top: 5rem;
+}
+.judul1 {
+    background-color: rgb(0, 47, 134);
+    top: -1rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-top: 0.2rem;
+    color: aliceblue;
+    
+
+}
+.kotak-idff {
+    margin-top: 3rem;
+    background-color: rgb(98, 211, 255);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 2px solid white;
+}
+#idff {
+    margin-left: 9%;
+    height: 1.5rem;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+     border: 2px solid rgb(124, 190, 255);
+    margin-bottom: 0.5rem;
+}
+.ID-FF {
+    text-align: center;
+
+}
+.kotak-emailff {
+    margin-top: 1rem;
+    background-color: rgb(98, 211, 255);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 2px solid white;
+}
+#emailff {
+    margin-left: 9%;
+    height: 1.5rem;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+    border: 2px solid rgb(124, 190, 255);
+    margin-bottom: 0.5rem;
+}
+.email-ff {
+    text-align: center;
+
+}
+.kotak-passwordff {
+    margin-top: 1rem;
+    background-color: rgb(98, 211, 255);
+    margin-left: 1rem;
+    border: 2px solid white;
+    margin-right: 1rem;
+}
+#passwordff {
+    margin-left: 9%;
+    height: 1.5rem;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(124, 190, 255);
+    margin-bottom: 0.5rem;
+}
+.password-ff {
+    text-align: center;
+
+}
+#login-forum-btn {
+    width: 90%;
+    margin-left: 5%;
+    background-color: lightgreen;
+    height: 4rem;
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.kotakberhasil {
+  width: 80%;
+  position: absolute;
+  height: 10rem;
+  top: 0;
+  display: none;
+  color: white;
+  border: red solid 5px;
+  margin-left: 10%;
+  background-color: orange;
+}
+}

